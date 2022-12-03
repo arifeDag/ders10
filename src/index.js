@@ -1,11 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 
+ function Kart(ozellikler) {
+  return <p>Merhaba {ozellikler.children}</p>
+ }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
- <h1>Merhaba dünya!</h1>
+ <Kart renk="Kirmizi">
+  <span>!</span>
+ </Kart>
 );
 
 
