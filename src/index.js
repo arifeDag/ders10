@@ -1,11 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import Yorumlar from './Yorumlar';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
- <h1>Merhaba dünya!</h1>
+  <>
+ <h1>Yorumlar</h1>
+<Yorumlar limit ={2}/>
+<Yorumlar limit ={10}/>
+</>
 );
 
 
